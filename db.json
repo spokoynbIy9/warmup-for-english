@@ -1,0 +1,18 @@
+{
+  "verbs": [
+    {
+      "id": "1",
+      "v1": "run",
+      "v2": "ran",
+      "v3": "run",
+      "translation": "бегать"
+    },
+    {
+      "id": "2",
+      "v1": "know",
+      "v2": "knew",
+      "v3": "known",
+      "translation": "знать"
+    }
+  ]
+}
