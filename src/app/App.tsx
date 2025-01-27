@@ -1,5 +1,7 @@
+import { AppRouter } from "@/shared/Router/ui/AppRouter";
+
 function App() {
-  return <></>;
+  return <AppRouter />;
 }
 
 export default App;
