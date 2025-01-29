@@ -1,0 +1,18 @@
+export const TIMES_IN_ENGLISH = [
+  "Present Simple",
+  "Present Simple Passive",
+  "Past Simple",
+  "Past Simple Passive",
+  "Future Simple",
+  "Future Simple Passive",
+  "Present Continuous",
+  "Present Continuous Passive",
+  "Past Continuous",
+  "Past Continuous Passive",
+  "Present Perfect",
+  "Present Perfect Passive",
+  "Past Perfect",
+  "Past Perfect Passive",
+  "Future Perfect",
+  "Future Perfect Passive",
+];
