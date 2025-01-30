@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import { useMemo } from "react";
 import { useGetVerbsQuery } from "../api/warmupApi";
 import { getRandomIndex } from "@/shared/helpers/getRandomIndex";
 
@@ -10,7 +9,7 @@ const TypogrpaphyTranslation = () => {
   const { data } = useGetVerbsQuery();
   const min = 0;
   const max = data?.length ?? 0;
-  const randomIndex = useMemo(() => getRandomIndex(min, max), [min, max]);
+  const randomIndex = getRandomIndex(min, max - 1);
 
   return (
     <Typography>
