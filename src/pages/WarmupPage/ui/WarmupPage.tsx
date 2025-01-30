@@ -1,6 +1,6 @@
+import TypographyTime from "@/entities/Warmup/ui/TypographyTime";
 import TypogrpaphyTranslation from "@/entities/Warmup/ui/TypogrpaphyTranslation";
-import { getRandomTime } from "@/shared/helpers/getRandomTime";
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import { useState } from "react";
 
 // @todo
@@ -8,17 +8,17 @@ import { useState } from "react";
 // но TypogrpaphyTranslation
 
 const WarmupPage = () => {
-  const [englishTime, setEnglishTime] = useState("");
+  const [, setKey] = useState(0);
 
-  const generateRandomTime = () => {
-    setEnglishTime(getRandomTime());
+  const trigger = () => {
+    setKey((prevKey) => prevKey + 1);
   };
 
   return (
     <Stack>
-      <Typography>{englishTime}</Typography>
+      <TypographyTime />
       <TypogrpaphyTranslation />
-      <Button onClick={generateRandomTime}>Сгенерировать</Button>
+      <Button onClick={trigger}>Сгенерировать</Button>
     </Stack>
   );
 };
