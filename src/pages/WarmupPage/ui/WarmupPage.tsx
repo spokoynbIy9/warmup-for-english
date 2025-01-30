@@ -3,10 +3,6 @@ import TypogrpaphyTranslation from "@/entities/Warmup/ui/TypogrpaphyTranslation"
 import { Button, Stack } from "@mui/material";
 import { useState } from "react";
 
-// @todo
-// генерировать вновь и вновь не только englishTime,
-// но TypogrpaphyTranslation
-
 const WarmupPage = () => {
   const [, setKey] = useState(0);
 
